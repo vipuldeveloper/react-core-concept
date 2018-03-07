@@ -1,28 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Hello extends React.Component {
-    render() {
-        return (
-            <h1>Hello</h1>
-        )
-    }
-}
-
-class World extends React.Component {
-    render() {
-        return (
-            <h1>World</h1>
-        )
-    }
-}
-
 class HelloWorld extends React.Component {
+    constructor() {
+        super();
+        this.name = "Hello World";
+    }
+
     render() {
         return (
             <div>
-                <Hello/>
-                <World/>
+                {this.name}
             </div>
         )
     }
